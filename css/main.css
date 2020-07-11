@@ -1,0 +1,420 @@
+a{
+  text-decoration:none;
+}
+
+#all{
+  background-color: white;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  padding:10px;
+}
+
+/* css*/
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color:#fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+
+}
+
+/* end css */
+.img-banner{
+  width:100%;
+  --height:80px;
+  --border:1px solid red;
+  text-align:center;
+  margin:0 auto;
+}
+
+.img-banner img{
+  width:100%;
+}
+
+section{
+  margin-bottom:30px;
+}
+
+.title{
+  text-align:center;
+}
+
+
+
+.wrapper-search{
+  margin:0 auto;
+  width:50%;
+  --border:1px solid red;
+  display:block;
+}
+
+.search{
+display:inline-block;
+margin:0 auto;
+width:80%;
+}
+
+.submit{
+  --width:15%;
+  color:white;
+  background-color:gray;
+  --margin-left: 10px;
+}
+
+.product{
+  text-align:center;
+  font-size: 16px;
+}
+
+.reason{
+  text-align:center;
+  height:250px;
+  --border:1px solid red;
+}
+
+.reason-content{
+  width:70%;
+  margin:0 auto;
+}
+
+.mengapa{
+  background-color:#ececee;
+  padding-bottom: 20px;
+}
+
+.caranya{
+  background-color:#ececee; 
+  padding-bottom: 20px;
+}
+
+/*product*/
+.produk{
+
+}
+
+.wrapper-product-rent{
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thumbnail:hover{
+  border:1px solid #56799C;
+}
+
+.product-rent{
+  height:325px;
+  width:225px;
+  vertical-align:middle;
+  display:table-cell; 
+}
+
+.product-rent-title{
+  font-size: 18px;
+  --text-align:center;
+  height: 55px;
+  overflow: hidden;
+}
+
+.product-rent-price{
+
+}
+
+.product-rent-price::before{
+  content:"Rp ";
+}
+
+.product-rent-price::after{
+  content:" /hari";
+}
+
+.product-rent-available{
+  margin-bottom:20px;
+}
+
+.product-rent-available::before{
+    content:"Dapat disewa selama: ";
+    color:gray;
+}
+
+.product-rent-available::after{
+    content:" hari";
+    color:gray;
+}
+
+.product-rent img{
+  max-width:225px;
+  max-height:225px;
+  margin:0 auto;
+  display:table-cell;
+}
+/* end product */
+
+/* product page */
+.product-page-wrapper{
+  display:table;
+}
+
+.product-page{
+  width:300px;
+  height:425px;
+  border:1px solid silver;
+  padding:10px;
+  border-radius:5px;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.product-page-title{
+    border-bottom:2px solid #ccc;
+    margin-bottom:10px;
+    width:50%;
+}
+
+.product-page-price{
+  color:#18bc9c;
+  font-size:30px;
+  font-weight: bold;
+}
+
+.product-page-price::before{
+  content:"Rp ";
+  color:#18bc9c;
+  font-size:20px;
+}
+
+.product-page img{
+  max-width:265px;
+  max-height: 400px;
+   margin:0 auto;
+  display:table-cell;
+}
+
+.product-page-order{
+  color:#18bc9c;
+}
+
+.product-page-order::before{
+  content:"Dapat disewa dalam ";
+  color:black;
+}
+
+.product-page-order::after{
+  content:" hari";
+  color:black;
+}
+
+.product-page-ongkir{
+  margin-bottom:10px;
+}
+
+.product-page-spesification{
+
+}
+
+.product-page-spesification label{
+   font-size:21px;
+}
+
+.product-page-name{
+  font-weight:bold;
+}
+
+.product-page-value{
+  
+}
+
+.product-page-value::before{
+ 
+}
+
+.product-page-others-wrap{
+  display:table;
+}
+
+.product-page-others{
+  width:200px;
+  height:200px;
+  --border:1px solid silver;
+  padding:10px;
+  border-radius:5px;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.product-page-others img{
+  max-width:90px; 
+  max-height: 90px;
+  margin:0 auto;
+  display:table-cell;
+}
+
+.others{
+  --border:1px solid silver;
+  padding:10px 15px;
+  margin:20px 5px;
+}
+
+.others h4{
+  text-align:center;
+}
+
+
+.product-page-other{
+
+}
+
+/* checkout */
+.checkout-input{
+  width:80%;
+  margin-bottom: 100px;
+
+}
+
+
+footer{
+
+}
+
+.footer{
+  margin-left:10px;
+  font-size:15px;
+  border-top:2px solid silver;
+  padding-top:10px;
+  margin-top: 10px;
+}
+
+.footer li{
+  font-weight:bold;
+}
+
+.right-footer{
+  text-align:right;
+
+}
+
+.footer-category{
+
+}
+
+.footer-category:hover{
+  text-decoration:underline;
+}
+
+.footer-title{
+  font-size:19px;
+}
+
+/* faq */
+.faq li{
+  
+  color:gray;
+  font-weight: bold;
+}
+
+.fafa{
+  letter-spacing:10px;
+}
+
+.content-term{
+  line-height:27px;
+}
+
+/* dashboard */
+.profile-picture{
+  width:220px;
+  display:block;
+  border:3px solid #eee;
+  border-radius:999em;
+  margin: auto;
+}
+
+.img-thumbnail{
+  width:100px;
+}
+
+.minimum-day{
+
+}
+
+.minimum-day::after{
+ 
+}
+
+
+
+/* slider mobile */
+.title h2,h3{
+  font-size: 18px;
+}
+.list-inline li .fa{
+  font-size: 18px;
+}
+.list-inline li .fa:hover{
+  color: #56799C;
+  cursor: pointer;
+}
+.comingsoon{}
+@media screen and (min-width: 781px) {
+    .comingsoon {
+        width: 350px;
+    }
+}
+
+.thank-you{}
+.thank-you .content{text-align:center;}
+.thank-you .content h2{margin-bottom:10px !important;margin-top:10 !important; }
+.thank-you .content .fa{color: #56799C; }
+
+.thumbnail a{color: #555555;}
+.thumbnail a:hover{text-decoration: none;color: #56799C;}
+
+.submitButton{background: #56799C;}
+.submitButton a{color: white;}
+
+.btn.btn-default{border-radius: 0px;}
+.btn.btn-default:hover{box-shadow: 0 0 0 1px #fff inset, 1px 2px 4px #ddd;
+}

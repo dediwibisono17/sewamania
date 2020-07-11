@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<title>Sewa - Daripada Beli, mending Sewa Aja</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/main.css">
+	  <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+	   <script src="js/jquery.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div id="header"></div>
+
+	<div class="container" style="margin-top: 100px;">
+
+	<ol class="breadcrumb">
+	  <li><a href="#">Home</a></li>
+	  <li class="active">FAQ</li>
+	</ol>
+
+	<legend class="title">
+	  <h2>FAQ</h2>
+	</legend>
+
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<div class="faq">
+				<ol>
+					<li>Bagaimana jika barang tidak dikembalikkan?</li>
+					<p>Ketika masa akan berakhir, h-1 sewa.com akan membuat reminder kepada penyewa untuk segera mengembalikan</p>
+					
+					<li>Bagaimana jika barang rusak ketika dikembalikan?</li>
+					<p>tergantung kerusakan, jika rusak kurang dari 20% maka dikenakan biaya murah, apabila parah dapat dikenakan biaya sesuai harga produk</p>
+
+					<li>Bagaimana jika barang yang dikembaliin, barangnya berbeda?</li>
+					<p>Saat menyewa, Kami akan memverifikasi produk dan memastikan barang yang disewa dan dikembalikkan tidak akan tertukar</p>
+
+					<li>Jika barang deikembalikan, lebih dari jatuh tempo?</li>
+					<p>Tim Kami akan mengingatkan H-1, untuk persiapan mengembalikan barang, apabila lebih dari 2 hari barang telat untuk pengembaliannya, maka akan dikenankan denda 1% dari harga sewa.</p>
+
+          <li>Produk apa saja yang ditawarkan?</li>
+          <p>Mulai dari sepatu, elektronik, fashion, dan ke depannya akan menyewakan beberapa furniture</p>
+					
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center" style="margin-bottom: 20px;">
+		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#caraSewa">Cara menyewa</button>
+	</div>
+		  <!-- Modal -->
+		  <div class="modal fade" id="caraSewa" role="dialog">
+		    <div class="modal-dialog">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Cara Menyewa</h4>
+		        </div>
+		        <div class="modal-body">
+		          <ol>
+		          	<li>Penyewa memilih produk</li>
+		          	<li>Transfer biaya ke sewa.com</li>
+		          	<li>Pemilik produk mengirim produknya ke sewa.com</li>
+		          	<li>sewa.com akan mengirim produk</li>
+		          </ol>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+	
+      <div id="footer"></div>
+    </div>
+
+    <script> 
+      $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+      });
+    </script> 
+</body>
+</html>
+   

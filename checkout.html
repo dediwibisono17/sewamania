@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<title>Sewa - Daripada Beli, mending Sewa Aja</title>
+	  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+	  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+	  <link rel="stylesheet" href="css/main.css">
+	  <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+
+	 <!--  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+	 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" /> -->
+</head>
+<body>
+<div id="header"></div>
+
+	<div class="container" style="margin-top: 100px;">
+
+	<ol class="breadcrumb">
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="product.html">Product iPhone</a></li>
+	  <li><a href="product-page.html">Product iPhone 5C</a></li>
+	  <li class="active">Checkout</li>
+	</ol>
+
+		<label>Checkout Page</label>
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<div class="product-page-wrapper">
+					<div class="product-page">
+						<img src="img/iphone-produk3.png" alt="iPhone 5c">
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-12 col-md-8">
+				<div class="product-page-title">
+					<h4>iPhone 5C 32 GB</h4>
+				</div>
+
+				<div class='col-md-5'>
+				<label for="">Dari</label>
+			        <div class="form-group">
+			            <div class='input-group date'>
+			                <input type='text' id='datetimepicker6' class="form-control" />
+			                <span class="input-group-addon">
+			                    <span class="glyphicon glyphicon-calendar"></span>
+			                </span>
+			            </div>
+			        </div>
+			    </div>
+			    <div class='col-md-5'>
+			    <label for="">Sampai</label>
+			        <div class="form-group">
+			            <div class='input-group date'>
+			                <input type='text' id='datetimepicker7' class="form-control" />
+			                <span class="input-group-addon">
+			                    <span class="glyphicon glyphicon-calendar"></span>
+			                </span>
+			            </div>
+			        </div>
+			    </div>
+
+			    <!-- <input type="text" name="daterange" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" /> -->
+				<div class="checkout-input">
+					<input type="text" class="form-control" placeholder="Masukan Nama"><br>
+					<input type="email" class="form-control" placeholder="Masukan Email"><br>
+					<input type="text" class="form-control" placeholder="Masukan No Hanphone"><br>
+					 <textarea class="form-control" rows="5" id="" placeholder="Masukan Alamat"></textarea><br>
+            
+            <label>Pembayaran via: </label><br>
+            <label class="radio-inline"><input type="radio" name="optradio">Transfer Bank</label>
+            <label class="radio-inline"><input type="radio" name="optradio">Mandiri</label>
+            <label class="radio-inline"><input type="radio" name="optradio">BCA</label>
+            <label class="radio-inline"><input type="radio" name="optradio">BNI</label>
+
+					 <button type="button" class="btn btn submitButton pull-right"><a href="thank-you.html">Submit</a></button>
+				</div>
+			</div>
+
+
+	</div>
+		   <div id="footer"></div>
+   <!-- ajax -->
+   <script> 
+          $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+          });
+    </script> 
+
+  <!-- datepicker -->
+	<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+$(function() {
+    /*$('input[name="daterange"]').daterangepicker();*/
+});
+</script>
+</div>
+
+</body>
+</html>
